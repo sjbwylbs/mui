@@ -13,7 +13,6 @@
 				//仅在webview的url为远程文件，且ajax请求的资源不同源下使用plus.net.XMLHttpRequest
 				if (originAnchor.protocol !== 'file:') {
 					var urlAnchor = document.createElement('a');
-					urlAnchor.href = settings.url;
 					urlAnchor.href = urlAnchor.href;
 					settings.crossDomain = (originAnchor.protocol + '//' + originAnchor.host) !== (urlAnchor.protocol + '//' + urlAnchor.host);
 					if (settings.crossDomain) {
